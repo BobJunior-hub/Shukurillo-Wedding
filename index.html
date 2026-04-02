@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шукурилло - Никох Тўйи</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Splash Screen / Cover -->
+    <div id="cover-screen" class="cover-screen">
+        <div class="floral-card">
+            <div class="card-content">
+                <h2 class="pre-title" style="color: var(--text-muted); margin-bottom: 2rem;">Хуш Келибсиз!</h2>
+                <h1 class="main-title" style="font-size: clamp(4rem, 12vw, 5.25rem); margin-bottom: 3rem;">Шукурилло</h1>
+                <button id="openInvitationBtn" class="btn-open">
+                    <span class="btn-text">Таклифномани очиш</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="texture-overlay"></div>
+    <div class="particles" id="particles"></div>
+
+    <!-- Music Player -->
+    <button id="musicToggle" class="music-toggle" aria-label="Toggle Music">
+        <svg class="music-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+            <path d="M9 18V5l12-2v13"></path>
+            <circle cx="6" cy="18" r="3"></circle>
+            <circle cx="18" cy="16" r="3"></circle>
+        </svg>
+    </button>
+    <audio id="bg-music" src="Vafodorim _ @Uzmusiqam.mp3" loop preload="auto"></audio>
+
+    <!-- Section 1: Hero -->
+    <section class="page page-hero" id="home">
+        <div class="floral-card fade-in-up">
+            <div class="content">
+                <h2 class="pre-title">Сизни таклиф этамиз</h2>
+                <h1 class="main-title">Шукурилло</h1>
+                <p class="subtitle">«Никох» тўйи</p>
+                
+                <div class="date-ribbon">
+                    <span class="date-line"></span>
+                    <span class="date-text">26 Апрель 2026</span>
+                    <span class="date-line"></span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span class="scroll-text">Пастга</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Details -->
+    <section class="page page-details" id="details">
+        <div class="floral-card reveal">
+            <div class="card-content">
+                <h2 class="section-heading section-heading--mea">Ассалому Алайкум!</h2>
+                <h2 class="section-heading section-heading--mea">Хурматли Азиз Мехмонимиз!</h2>
+                <p class="invite-text">
+                    <span class="mea-culpa-text">Сизни азиз фарзандимиз</span> <br><span class="highlight-name">ШУКУРИЛЛОнинг</span>
+                    <br>«Никох» тўйи муносабати билан
+                    <br><br><span class="accent-text">2026 йил 26-апрель куни</span>
+                    <br><span class="accent-text time-accent">нахорги</span> ёзиладиган
+                    <br>дастурхонимизга таклиф этамиз.
+                </p>
+
+                <div class="hosts">
+                    <p class="hosts-greeting">Хурмат ва эхтиром ила:</p>
+                    <p class="hosts-names">КОЗИМЖОН <br> АКРАМОВлар оиласи</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Location -->
+    <section class="page page-location" id="location">
+        <div class="floral-card location-card reveal">
+            <div class="card-content">
+                <h2 class="section-heading section-heading--location">Манзил</h2>
+                <div class="location-details">
+                    <p class="city">Шахрихон шахар.</p>
+                    <p class="venue">“AL-HAYAT” тўйхонаси.</p>
+                    <p class="landmark">Мўлжал: Янги пахта завод ёнида.</p>
+                </div>
+                
+                <a href="https://maps.app.goo.gl/o1AngPkUnjspmkcA8" 
+                   target="_blank" 
+                   class="btn-map">
+                    <span class="btn-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </span>
+                    Харитада кўриш
+                </a>
+            </div>
+        </div>
+        
+        <footer class="footer reveal">
+            <p>Ташрифингиздан мамнун бўламиз!</p>
+            <div class="footer-line"></div>
+        </footer>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
